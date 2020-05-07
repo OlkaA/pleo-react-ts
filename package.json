@@ -2,9 +2,12 @@
   "name": "api",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "10.16.3"
+  },
   "scripts": {
     "start": "ts-node ./app",
-    "build": "tsconfig",
+    "build": "tsc",
     "postinstall": "npm run build",
     "prettier": "prettier --write './**/*.{ts,tsx}' --config ./.prettierconfig"
   },
